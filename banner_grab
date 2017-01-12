@@ -1,0 +1,6 @@
+#!/bin/sh
+./db_init.py
+
+./banner_grabbing.py list.txt > /dev/null
+
+./db_fetch.py
