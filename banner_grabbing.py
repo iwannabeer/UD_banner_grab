@@ -12,7 +12,7 @@ def grab_banner(ip_address,port=80):
         socket.setdefaulttimeout(1)
 
         s.connect((ip_address,port))
-        s.send('KEK^)\r\n\r\n')  
+        s.send('GET / \r\n\r\n')  
         banner = s.recv(1024)
         s.close()
 
